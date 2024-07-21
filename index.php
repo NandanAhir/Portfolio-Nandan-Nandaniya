@@ -19,6 +19,7 @@ require_once('db.php');
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -89,14 +90,15 @@ require_once('db.php');
                     <!-- <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span></span></li> -->
                     <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Rajkot - Gujarat</span></li>
                     <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <a href="tel:9925972449"><span style="color:black">+91 9925972449</span></a></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Interest:</strong> <span>Music,Travelling</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Hobby:</strong> <span>Music,Travelling</span></li>
                   </ul>
                 </div>
                 <div class="col-lg-6">
                   <ul>
                     <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>18</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.Voc(Pursuing)</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.Voc (Pursuing)</span></li>
                     <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <a href="mailto:nandannandaniya08@gmail.com"><span style="color:black">nandannandaniya08@gmail.com</span></a></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Interest:</strong> <span>Developing, Designing</span></li>
                     <!-- <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span></span></li> -->
                   </ul>
                 </div>
@@ -134,7 +136,13 @@ require_once('db.php');
               <h4>B.Voc - Information Technology</h4>
               <h5>2022 - Pursuing</h5>
               <p><em>Rk University - Rajkot</em></p>
-              <p>I currently pursuing B.voc-IT In 4th Semester .</p>
+              <p>I currently pursuing B.voc-IT In 5th Semester .</p>
+            </div>
+            <div class="resume-item">
+              <h4>12th Science - A</h4>
+              <h5>2020 - 2022</h5>
+              <p><em>Shree D. S. Gojiya Vidhyalay - Jamnagar</em></p>
+              <p></p>
             </div>
           </div>
 
@@ -242,11 +250,11 @@ require_once('db.php');
                   <i class="bx bx-share-alt"></i>
                   <h3>Social Profiles</h3>
                   <div class="social-links">
-                    <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://twitter.com/nandaNandaniya" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.facebook.com/nandan.nandaniya.5" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/nandan_ahir_8605/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://join.skype.com/invite/xC7PvlrJj1NI" target="_blank"  class="google-plus"><i class="bi bi-skype"></i></a>
+                    <a href="https://www.linkedin.com/in/nandan-nandaniya-4aa950245/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
                   </div>
                 </div>
               </div>
@@ -269,7 +277,7 @@ require_once('db.php');
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="#contact" id="contactform" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -289,7 +297,7 @@ require_once('db.php');
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit" onclick="checkvalidation()">Send Message</button></div>
             </form>
           </div>
 
@@ -306,11 +314,11 @@ require_once('db.php');
     <div class="container">
       <h3>Nandan B. Nandaniya</h3>
       <div class="social-links">
-        <a href="https://twitter.com/nandaNandaniya" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.facebook.com/nandan.nandaniya.5" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="https://www.instagram.com/nandan_ahir_8605/" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="https://join.skype.com/invite/xC7PvlrJj1NI" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="https://www.linkedin.com/in/nandan-nandaniya-4aa950245/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://twitter.com/nandaNandaniya" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.facebook.com/nandan.nandaniya.5" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/nandan_ahir_8605/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://join.skype.com/invite/xC7PvlrJj1NI" target="_blank" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="https://www.linkedin.com/in/nandan-nandaniya-4aa950245/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -328,7 +336,42 @@ require_once('db.php');
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script > 
+    function checkvalidation(){
+      
+      var name = $("#name").val();
+      var email = $("#email").val();
+      var subject = $("#subject").val();
+      var message = $("#message").val();
 
+
+      // if(name!='' && email!='' && subject!='' && message!=''){
+
+        var formData = new FormData($('#contactform')[0]);
+
+
+        $.ajax({
+          url: 'forms/contact.php',
+          method: 'POST',
+          datatype: 'json',
+          data: formData,
+          success: function(responce){
+
+            if(responce==1){
+              alert("Your Form is Submitted");
+              // $("#error-message").val('Your Form is Submitted.')
+            }
+
+          },
+          cache: false,
+          contentType: false,
+          processData: false
+        
+        });
+
+      // }
+    }
+  </script>
 </body>
 
 </html>

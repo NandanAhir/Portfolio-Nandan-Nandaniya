@@ -2,22 +2,22 @@
 
 <?php
 
+require_once('db.php');
 // $conn = mysqli_connect('localhost', 'root', '', 'portfolio');
 // if(!$conn){
 //     die('could not connect' . mysqli_connect_error());
 // }
-$conn = mysqli_connect('localhost', 'root', '', 'id21683033_portfolio');
-if(!$conn){
-    die('could not connect' . mysqli_connect_error());
-}
-
+// $conn = mysqli_connect('localhost', 'id21683033_nandan', 'Nandan@12345', 'id21683033_portfolio');
+// if(!$conn){
+//     die('could not connect' . mysqli_connect_error());
+// }
 
 $name = $_REQUEST['name'];
 $email = $_REQUEST['email'];
 $subject = $_REQUEST['subject'];
 $message = $_REQUEST['message'];
 $entrydate = date('d-m-Y h:i:s a', time());
-// print_r($entrydate);exit;
+
 
 $store = "INSERT INTO contactform (name,email,subject,message,entrydatetime) VALUE('$name','$email','$subject','$message','$entrydate')";
 // $store = "INSERT INTO csc (country_name, state_name, city_name) VALUE('$country_name','$state_name','$city_name')";
@@ -25,8 +25,7 @@ $store = "INSERT INTO contactform (name,email,subject,message,entrydatetime) VAL
 mysqli_query($conn, $store);
 
 if(!empty($store)){
-  // header('location: http://localhost/portfolio-nandan-nandaniya/#contact', true, 307);
-  header('location: https://nandan-portfolio.000webhostapp.com/#contact', true, 307);
+  echo 1;
 
 }
 
